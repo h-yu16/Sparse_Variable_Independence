@@ -1,0 +1,9 @@
+logs*/
+*.png
+*.txt
+*.pyc
+*/__pycache__/*
+__pycache__/*
+*.sh
+garbage*/
+results*/

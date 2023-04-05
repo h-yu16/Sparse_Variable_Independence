@@ -1,0 +1,5 @@
+- `exp_linear_selection_bias`: linear data with model misspecification, backend is OLS and STG
+- `exp_linear_selection_bias`: linear data with model misspecification, algorithm is iterative
+- `exp_nonlinear_selection_bias`: MLP generated data, backend is STG
+- `exp_nonlinear_selection_bias_loss_reweighting`: MLP generated data, backend is (weighted) OLS and MLP
+- `exp_nonlinear_selection_bias_iterative`: MLP generated data, algorithm is iterative
