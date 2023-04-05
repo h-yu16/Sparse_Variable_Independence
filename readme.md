@@ -1,5 +1,50 @@
-- `exp_linear_selection_bias`: linear data with model misspecification, backend is OLS and STG
-- `exp_linear_selection_bias`: linear data with model misspecification, algorithm is iterative
-- `exp_nonlinear_selection_bias`: MLP generated data, backend is STG
-- `exp_nonlinear_selection_bias_loss_reweighting`: MLP generated data, backend is (weighted) OLS and MLP
-- `exp_nonlinear_selection_bias_iterative`: MLP generated data, algorithm is iterative
+# Sparse Variable Independece
+
+Source code for AAAI 2023 paper [Stable Learning via Sparse Variable Independence](https://arxiv.org/abs/2212.00992).
+
+## Quick Start
+
+### Running SVI
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python3 exp_svi.py 
+```
+
+### Running other algorithms
+
+#### OLS
+
+```bash
+CUDA_VISIBLE_DEVICES=-1 python3 exp_linear.py --reweighting None --paradigm regr
+```
+
+#### STG
+
+```bash
+CUDA_VISIBLE_DEVICES=-1 python3 exp_linear.py --reweighting None --paradigm fs
+```
+
+#### DWR
+
+```bash
+CUDA_VISIBLE_DEVICES=-1 python3 exp_linear.py --reweighting DWR --paradigm regr
+```
+
+#### STG
+
+```bash
+CUDA_VISIBLE_DEVICES=-1 python3 exp_linear.py --reweighting DWR --paradigm fs
+```
+
+## Citing
+
+If you find this repo useful for your research, please consider citing the paper.
+
+```
+@article{yu2022stable,
+  title={Stable Learning via Sparse Variable Independence},
+  author={Yu, Han and Cui, Peng and He, Yue and Shen, Zheyan and Lin, Yong and Xu, Renzhe and Zhang, Xingxuan},
+  journal={arXiv preprint arXiv:2212.00992},
+  year={2022}
+}
+```
