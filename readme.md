@@ -15,25 +15,25 @@ CUDA_VISIBLE_DEVICES=0 python3 exp_svi.py
 #### OLS
 
 ```bash
-CUDA_VISIBLE_DEVICES=-1 python3 exp_linear.py --reweighting None --paradigm regr
+CUDA_VISIBLE_DEVICES=0 python3 exp_linear.py --reweighting None --paradigm regr
 ```
 
 #### STG
 
 ```bash
-CUDA_VISIBLE_DEVICES=-1 python3 exp_linear.py --reweighting None --paradigm fs
+CUDA_VISIBLE_DEVICES=0 python3 exp_linear.py --reweighting None --paradigm fs
 ```
 
 #### DWR
 
 ```bash
-CUDA_VISIBLE_DEVICES=-1 python3 exp_linear.py --reweighting DWR --paradigm regr
+CUDA_VISIBLE_DEVICES=0 python3 exp_linear.py --reweighting DWR --paradigm regr
 ```
 
 #### STG
 
 ```bash
-CUDA_VISIBLE_DEVICES=-1 python3 exp_linear.py --reweighting DWR --paradigm fs
+CUDA_VISIBLE_DEVICES=0 python3 exp_linear.py --reweighting DWR --paradigm fs
 ```
 
 ## Citing
