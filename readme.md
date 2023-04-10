@@ -1,6 +1,6 @@
 # Sparse Variable Independece
 
-Source code for AAAI 2023 paper [Stable Learning via Sparse Variable Independence](https://arxiv.org/abs/2212.00992).
+Official repo for AAAI 2023 paper [Stable Learning via Sparse Variable Independence](https://arxiv.org/abs/2212.00992).
 
 ## Quick Start
 
